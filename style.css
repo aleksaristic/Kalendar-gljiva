@@ -1,0 +1,186 @@
+*{
+    padding:0px;
+    margin:0px;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url('../../Mushrooms/img/suncanica1.jpg');
+    background-position: center;
+    background-size: cover;
+    position:relative;
+}
+
+h1{
+    z-index: 1;
+    text-align: center;
+    margin-top:50px;
+    font-weight: 30px;
+    color: red;
+    margin-bottom:50px;
+}
+
+form{
+    color:white;
+    margin-bottom:40px;
+    text-align: center;
+}
+
+form input{
+    margin-bottom:10px;
+}
+
+#kalendar{
+    color:black;
+    width:40%;
+    height: 50vh;
+    margin:0px auto;
+    z-index: 2;
+    border:7px solid darkblue;
+    border-collapse: collapse;
+}
+
+#kalendar #title{
+    border-bottom: 1px solid darkblue;
+}
+
+#kalendar thead tr th{
+    background:rgb(92, 63, 197);
+    font-size:20px;
+    color:white;
+    padding:3px 3px;
+}
+
+#kalendar tbody tr td{
+    border:1px dashed rgb(41, 39, 39);
+    padding:5px;
+    background-color:white;
+    font-size:10pt;
+    width:50px;
+    height:50px;
+    text-align:right;
+    vertical-align: top;
+    transition:1000ms;
+}
+
+#kalendar tbody tr td:hover{
+    background-image: linear-gradient(rgba(255,255,255,0.5),rgba(255,255,255,0.5)),url('../../Mushrooms/img/korpaGljive.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+#kalendar tbody tr td:last-child{
+    background-color:rgb(240, 88, 88);
+}
+
+#kalendar tbody tr td:nth-child(6){
+    background-color:rgb(241, 217, 80);
+}
+
+form label{
+    font-size:20px;
+}
+
+form #search{
+    width:200px;
+    height:30px;
+}
+
+p{
+    color:white;
+    text-align: center;
+    font-size:30px;
+    margin-top:50px;
+    margin-bottom:50px;
+}
+
+#gljive{
+    margin:50px auto;
+    width:90%;
+    min-height:100px;
+    border-collapse: collapse;
+    border:5px solid red;
+}
+
+#gljive thead{
+    background-color:rgb(240, 88, 88);
+}
+
+#gljive thead tr th{
+    font-size: 20px;
+    color:blue;
+    padding:5px 5px;
+    border-bottom: 1px solid blue;
+    border-right: 1px solid blue;
+    text-align: left;
+}
+
+#gljive tbody tr td img{
+    width:70px;
+    height:60px;
+}
+
+#gljive tbody{
+    background-color:wheat;
+}
+
+#gljive tbody tr td{
+    border-left:1px solid blue;
+    border-bottom:1px solid blue;
+}
+
+#gljive tbody tr td:last-child a{
+    text-align: center;
+    cursor: pointer;
+    padding:5px 5px;
+    font-size:20px;
+    background-color:red;
+    width:fit-content;
+    transition: 300ms;
+    height: fit-content;
+}
+
+#gljive tbody tr td:last-child a:hover{
+    background-color:rgb(185, 2, 2);
+}
+
+#gljive tbody tr td:last-child{
+    text-align: center;
+}
+
+#gljive tbody tr td{
+    padding:5px 5px;
+    font-size:20px;
+    width:fit-content;
+    height:fit-content;
+}
+
+@media screen and (max-width:700px){
+    body{
+        background-position:right;
+    }
+
+    #gljive thead tr th{
+        font-size:15px;
+    }
+
+    #gljive tbody tr td:nth-child(3){
+        display:none;
+    }
+
+    #gljive thead tr th:nth-child(3){
+        display:none;
+    }
+
+    #gljive tbody tr td:last-child a{
+        font-size:15px;
+    }
+
+    #gljive tbody tr td:nth-child(4){
+        display:none;
+    }
+
+    #gljive thead tr th:nth-child(4){
+        display:none;
+    }
+}
