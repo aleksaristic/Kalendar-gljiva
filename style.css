@@ -5,7 +5,7 @@
 }
 
 body{
-    background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url('../../Mushrooms/img/suncanica1.jpg');
+    background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url('img/suncanica1.jpg');
     background-position: center;
     background-size: cover;
     position:relative;
@@ -64,7 +64,7 @@ form input{
 }
 
 #kalendar tbody tr td:hover{
-    background-image: linear-gradient(rgba(255,255,255,0.5),rgba(255,255,255,0.5)),url('../../Mushrooms/img/korpaGljive.jpg');
+    background-image: linear-gradient(rgba(255,255,255,0.5),rgba(255,255,255,0.5)),url('img/korpaGljive.jpg');
     background-size: cover;
     background-position: center;
 }
